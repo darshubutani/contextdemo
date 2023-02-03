@@ -1,9 +1,10 @@
 import { useState } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Login from "./Login";
-import HomePage from "./HomePage";
-import ContactUs from "./ContactUs";
-import MyProfile from "./MyProfile";
+import Login from "./Components/Login";
+import HomePage from "./Components/HomePage";
+import ContactUs from "./Components/ContactUs";
+import MyProfile from "./Components/Profile/MyProfile";
+import UpdateProfile from "./Components/Profile/UpdateProfile";
 import { UserContext } from "./UserContext";
 
 function App() {
@@ -20,6 +21,7 @@ function App() {
             <Route exact path="/home" element={<HomePage />} />
             <Route exact path="/contact" element={<ContactUs />} />
             <Route exact path="/profile" element={<MyProfile />} />
+            <Route exact path="/updateprofile" element={<UpdateProfile />} />
           </Routes>
         </Router>
       </UserContext.Provider>

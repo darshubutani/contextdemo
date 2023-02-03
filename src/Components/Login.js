@@ -1,7 +1,7 @@
 import React, { useContext } from "react";
-import "./App.css";
+import "../App.css";
 import { useNavigate } from "react-router-dom";
-import { UserContext } from "./UserContext";
+import { UserContext } from "../UserContext";
 
 function Login() {
   const { setUserName, setPassword } = useContext(UserContext);
